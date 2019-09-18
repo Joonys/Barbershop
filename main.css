@@ -15,6 +15,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+}
 .inner-page {
   color: #000000;
 
@@ -46,14 +61,39 @@ a {
   background-color: #663d15;
 }
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 
   background-color: #000000;
 }
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 620px;
+}
+
+.user-navigation {
+  width: 140px;
+}
+
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -69,10 +109,18 @@ a {
   background-color: #242424;
 }
 
+.fearures {
+  margin: 80px;
+}
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .feature-item {
+  width: 300px;
   text-align: center;
 }
 
@@ -82,12 +130,23 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
   color: #000000;
 
   background-color: #f8f5f2;
   background-image: url('img/white.png');
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.news,
+.gallery,
+.contacts,
+.appointment {
+  width: 300px;
 }
 
 .index-columns h2 {
@@ -263,12 +322,29 @@ a {
 }
 
 .main-footer {
+  padding: 60px 0;
+  margin-top: 65px;
   color: #ffffff;
 
   background-color: #212121;
   background-image: url('img/dark.jpg');
   position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
+}
+
+.footer-copyright {
+  margin: 0;
+  margin-left: auto;
 }
 
 .footer-contacts a {
@@ -282,6 +358,7 @@ a {
 }
 
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 .footer-social ul {
@@ -293,6 +370,7 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
   text-align: center;
 }
 .footer-copyright .button:hover,
